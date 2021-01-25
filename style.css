@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Rubik',
+        sans-serif;
+    text-transform: uppercase;
+}
+
+header {
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 7rem;
+    background-image: url("img/mirage.jpg");
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+
+header input[type=text] {
+    display: flex;
+    flex: 1;
+    max-width: 30%;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 24px;
+    margin-right: 5rem;
+}
+
+
+#logo {
+    height: 80px;
+    width: 80px;
+    margin: 2rem;
+}
+
+.imdb {
+    height: 20px;
+    width: 40px;
+}
+
+.imdbLarge {
+    height: 40px;
+    width: 60px;
+    margin-left: 20%;
+}
+
+
+body {
+    background-image: url("img/background1.png");
+    background-position: center;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 8rem;
+    padding: 0;
+    justify-content: space-around;
+}
+
+section i {
+    width: 32%;
+    padding: 2%;
+    margin-bottom: 2%;
+}
+
+.movie {
+
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 0.25rem;
+
+    width: 32%;
+    margin-bottom: 2%;
+
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.movie:hover {
+    transform: scale(1.01);
+}
+
+a {
+    text-decoration: none;
+    font-size: large;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.poster {
+    max-width: 50%;
+    margin-right: 1%;
+}
+
+.content {
+    padding-left: 1%;
+}
+
+.poster:hover {
+    transform: scale(1.1);
+}
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 8rem;
+    padding: 0;
+    justify-content: space-between;
+    overflow: hidden;
+    font-family: 'Yusei Magic',
+        sans-serif;
+}
+
+.moviePoster {
+    margin-left: 2%;
+    width: 25%;
+}
+
+.movieInfo {
+    width: 70%;
+    background-image: url(img/moviebackground.jpg);
+    /* background-color: gainsboro; */
+    border-radius: 0.25rem;
+    text-align: center;
+}
+
+.moviePoster:hover {
+    transform: scale(1.2);
+}
+
+@media (max-width: 1200px) {
+    section {
+        flex-direction: column;
+    }
+
+    .movie {
+        flex-direction: row;
+        width: 100%;
+        height: 25%;
+    }
+
+}
+
+.youtube {
+    width: 70%;
+    height: 50%;
+    border: 3px solid black;
+    border-radius: 1rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.description {
+    margin-bottom: 2%;
+}
+
+.h1large {
+    margin: 2%;
+    font-size: 40px;
+}
+
+
+.expandedTitle {
+    display: none;
+}
+
+.titlewrapper:hover .expandedTitle {
+    display: block;
+}
+
+.titlewrapper:hover .compressedTitle {
+    display: none;
+}
